@@ -46,7 +46,7 @@ $ yarn start
 
 ## License
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+This project is under license from MIT.
 
 Made with 💜 by <a href="https://github.com/felipereisdev" target="_blank">Felipe Reis</a>
 
