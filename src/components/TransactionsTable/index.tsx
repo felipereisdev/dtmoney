@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { TransactionsContext } from "../../TransactionsContext";
+import { useTransations } from "../../hooks/useTransactions";
+
 import { Container } from "./styles";
 
 export function TransactionsTable() {
-  const { transactions } = useContext(TransactionsContext);
+  const { transactions } = useTransations();
 
   return (
     <Container>
@@ -26,7 +26,7 @@ export function TransactionsTable() {
                   currency: 'BRL'
                 }).format(transaction.amount)}
               </td>
-              <td>{transaction.type}</td>
+              <td>{transaction.category}</td>
               <td>
                 {new Intl.DateTimeFormat('pt-BR').format(
                   new Date(transaction.createdAt)
